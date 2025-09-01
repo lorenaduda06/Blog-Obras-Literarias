@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Obras Literárias</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="imagens/book.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Adaptações literárias</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_self"><i class="fa-solid fa-house"></i> Início</a></li>
+                <li><a href="obras.html" target="_self"> <i class="fa-solid fa-book"></i> Obras Literárias</a></li>
+                <li><a href="series.html" target="_self"><i class="fa-solid fa-film"></i> Séries</a></li>
+                <li><a href="filmes.html" target="_self"><i class="fa-solid fa-ticket"></i></i> Filmes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <img src="imagens/Adaptações literárias.png" alt="banner blog" id="banner">
+        <p>Este blog é voltado para apresentar adaptações literárias que inspiraram filmes e séries</p>
+        <h3>O que é uma adaptação literária?</h3>
+        <p>
+            É o processo de conversão de uma obra literária, geralmente popular, para filme e série, tendo como objetivo principal manter a essência
+            da história original, porém podendo fazer ajustes para se adequar ao novo formato
+        </p>
+    </article>
+
+    <section id="comentarios">
+        <h2 id="titulo-comentario">Comentários</h2>
+
+        <div id="para-comentar">
+            <h3>Faça login para comentar</h3>
+            <form id="form-login">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email-login" placeholder="email@example" required><br><br>
+                <label for="password">Senha:</label><br>
+                <input type="password" id="senha-login" placeholder="Digite sua senha" required><br><br>
+                <button type="submit" id="entrar">Entrar</button>
+            </form>
+
+            <p>Não tem conta? <a href="cadastro.html" id="cadastro">Cadastre-se</a></p>
+        </div>
+
+        <div id="campo-comentario">
+            <textarea id="comentario" placeholder="Escreva seu comentário"></textarea>
+            <button id="enviar-comentario">Enviar</button>
+            <button id="sair">Sair</button>
+        </div>
+
+        <div id="recado" class="mensagem">
+            <span id="recado-texto"></span>
+            <button onclick="closeMessage()">Ok</button>
+        </div>
+
+        <div id="lista-comentarios"></div>
+    </section>
+
+    <footer>
+        <div class="menu-rodape">
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="obras.html">Obras Literárias</a>
+                <a href="series.html">Séries</a>
+                <a href="filmes.html">Filmes</a>
+            </nav>
+        </div>
+        <p>Desenvolvido por: Lorena Eduarda</p>
+        <p><i>“O destino não é um caminho traçado, mas as escolhas que fazemos ao longo da jornada.” - A Viajante do Tempo</i></p>
+        <a href="https://github.com/lorenaduda06" target="_blank">
+            <img src="imagens/github.png" alt="GitHub" id="logo-github">
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+body {
+    line-height: 1.5;
+    font-family: calibri;
+}
+
+h1 {
+    font-family: 'Brush Script MT';
+    color: #F08080;
+    text-shadow: 1px 1px 1px black;
+    font-size: 60px;
+    text-align: center;
+}
+
+/* ======================== Menu ======================== */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+    background-color: #FFE4E1;
+    padding: 4px;
+    font-size:20px;
+}
+
+nav ul li:hover {
+    background-color: #FFDAB9;
+    text-decoration: underline;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 4px;
+}
+
+/* ======================== Página inicial ======================== */
+article {
+    background-color: #D8BFD8;
+    padding: 15px;
+    width: 70%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0,1);
+    font-size: 20px;
+}
+
+#banner {
+    width: 700px;
+    margin: 0 auto;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* ======================== Rodapé ======================== */
+footer {
+    border-top: 2px solid #ccc;
+    text-align: center;
+    margin-top: 35px;
+    padding: 15px;
+    background-color: #E6E6FA
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#logo-github {
+    width: 50px;
+    margin: 0 auto;
+    transition: transform 0.4s;
+}
+
+#logo-github:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* ======================== Mensagem para o usuário ======================== */
+.mensagem {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    z-index: 1000;
+}
+
+.mensagem button {
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+/* ======================== Cadastro ======================== */
+@font-face {
+    font-family: 'Type Writter';
+    src: url(fontes/ELEGANT\ TYPEWRITER\ Regular.ttf);
+}
+
+#titulo-cadastro {
+    font-family: 'Type Writter';
+    /*color: #E0FFFF;*/
+    color: #FF69B4;
+    text-shadow: 2.4px 2.4px 1px black;
+}
+
+.cadastro {
+    display: flex;
+    max-width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.cadastro form {
+    flex: 1;
+    padding: 40px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.cadastro aside {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro aside img {
+    width: 98%;
+    height: 98%;
+    object-fit: cover;
+}
+
+.cadastro button {
+    border: 1px groove black;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-left: 45px;
+    cursor: pointer;
+}
+
+/* ======================== Login ======================== */
+#sair {
+    display: none;
+}
+
+#entrar {
+    cursor: pointer;
+}
+
+/* ======================== Comentários ======================== */
+#titulo-comentario {
+    font-family: 'Type Writter';
+    margin-left: 15px;
+}
+
+#campo-comentario {
+    display: none;
+    margin-top:10px;
+}
+
+#lista-comentarios {
+    display: none;
+    margin-top: 20px;
+}
+
+.comentario {
+    background: #FFF0F5;
+    border: 1px groove black;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.comentario strong {
+    display: block;
+    font-size: 15px;
+    color: #C71585;
+    margin-bottom: 5px;
+}
+
+.comentario p {
+    font-size: 17px;
+    color: black;
+}
+
+#para-comentar {
+    display: flex;
+    padding: 15px;
+    background-color: #FFE4E1;
+}

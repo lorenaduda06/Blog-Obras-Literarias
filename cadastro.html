@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="imagens/book.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1 id="titulo-cadastro">Cadastro</h1>
+    <div class="cadastro">
+        <form>
+            <label for="nome-cad">Nome:</label><br>
+            <input type="text" id="nome-cad" placeholder="Digite seu nome" required><br><br>
+
+            <label for="email-cad">Email:</label><br>
+            <input type="email" id="email-cad" placeholder="email@example" required><br><br>
+
+            <label for="senha-cad">Senha:</label><br>
+            <input type="password" id="senha-cad" placeholder="Digite sua senha" required><br>
+
+            <br><button type="button" onclick="cadastrarUser()" id="cadastrado">Cadastrar</button>
+        </form>
+
+        <aside><img src="imagens/benedictseason.png" alt="background"></aside>
+    </div>
+
+    <div id="recado" class="mensagem" style="display: none;">
+        <span id="recado-texto"></span>
+        <button onclick="closeMessage()">Ok</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
