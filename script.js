@@ -123,7 +123,7 @@ function carregarComentarios() {
 }
 
 if (btnEnviar) {
-    btnEnviar.addEventListener("click", function() {    // consertar pq dps de colocar a função de sair ficou vermelha essa chave
+    btnEnviar.addEventListener("click", function() {  
 
     let comentario = document.getElementById("comentario").value.trim();
 
