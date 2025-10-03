@@ -3,9 +3,27 @@ body {
     font-family: calibri;
 }
 
+@keyframes colorTitle {
+    0% {
+        color: #F08080;
+    }
+    25% {
+        color: #DB7093;
+    }
+    50% {
+        color: #EE82EE;
+    }
+    100% {
+        color: #8A2BE2;
+    }
+}
+
 h1 {
     font-family: 'Brush Script MT';
-    color: #F08080;
+    animation-name: colorTitle;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     text-shadow: 1px 1px 1px black;
     font-size: 60px;
     text-align: center;
@@ -23,6 +41,9 @@ nav ul li {
     background-color: #FFE4E1;
     padding: 4px;
     font-size:20px;
+    transition-property: transform;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
 }
 
 nav ul li:hover {
@@ -30,6 +51,7 @@ nav ul li:hover {
     text-decoration: underline;
     transition-duration: 0.4s;
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 nav ul li a {
@@ -111,13 +133,12 @@ footer a:hover {
 
 /* ======================== Cadastro ======================== */
 @font-face {
-    font-family: 'Type Writter';
-    src: url(fontes/ELEGANT\ TYPEWRITER\ Regular.ttf);
+    font-family: 'Work force';
+    src: url(fontes/);  /*colocar fonte workforce*/
 }
 
 #titulo-cadastro {
-    font-family: 'Type Writter';
-    /*color: #E0FFFF;*/
+    font-family: 'Work force';
     color: #FF69B4;
     text-shadow: 2.4px 2.4px 1px black;
 }
@@ -191,6 +212,10 @@ footer a:hover {
     border-radius: 5px;
 }
 
+textarea {
+    padding: 20px;
+}
+
 .comentario strong {
     display: block;
     font-size: 15px;
@@ -207,4 +232,32 @@ footer a:hover {
     display: flex;
     padding: 15px;
     background-color: #FFE4E1;
+}
+
+#enviar-comentario {
+    padding: 3px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#sair {
+    padding: 3px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* ======================== Imagens ======================== */
+#poster-img {
+    transition-property: transform;
+    transition-duration: 0.7s;
+    transition-timing-function: ease;
+
+    transition-property: box-shadow;
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.1);
+}
+
+#poster-img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
 }

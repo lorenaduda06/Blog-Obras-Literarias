@@ -12,6 +12,8 @@ function cadastrarUser() {
     let nomeCad = document.getElementById("nome-cad").value;
     let emailCad = document.getElementById("email-cad").value;
     let senhaCad = document.getElementById("senha-cad").value;
+    let dataNascCad = document.getElementById("data-nasc-cad").value;
+    let sexoCad = document.getElementById("sexo-cad").value;
 
     let usuarios = JSON.parse(localStorage.getItem("usuarios") || "[]");
 
@@ -25,7 +27,9 @@ function cadastrarUser() {
         let novoCad = {
             nome: nomeCad,
             senha: senhaCad,
-            email: emailCad
+            email: emailCad,
+            dataNasc: dataNascCad,
+            sexo: sexoCad
         };
 
         usuarios.push(novoCad);
@@ -36,6 +40,8 @@ function cadastrarUser() {
         document.getElementById("nome-cad").value = "";
         document.getElementById("email-cad").value = "";
         document.getElementById("senha-cad").value = "";
+        document.getElementById("data-nasc-cad").value = "";
+        document.getElementById("sexo-cad").value = "";
     }
 };
 
