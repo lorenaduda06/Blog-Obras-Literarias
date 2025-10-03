@@ -1,3 +1,5 @@
+// Aluna: Lorena Eduarda
+
 function showMessage(text) {
     document.getElementById("recado-texto").innerText = text;
     document.getElementById("recado").style.display = 'block';
