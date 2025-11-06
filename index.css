@@ -31,6 +31,16 @@ body {
     text-align: center;
 }
 
+/* ======================== Menu e campo de busca ======================== */
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
 /* ======================== Menu ======================== */
 nav ul {
     display: flex;
@@ -60,6 +70,49 @@ nav ul li a {
     text-decoration: none;
     color: black;
     padding: 4px;
+}
+
+/* ======================== Campo de busca ======================== */
+.campo-busca {
+    display: flex;
+    align-items: center;
+    border: 1px groove black;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+#input-busca {
+    border: none;
+    padding: 2px;
+    outline: none;
+}
+
+#btn-busca {
+    background: none;
+    border: none;
+    padding: 4px;
+
+    transition: transform;
+    transition-duration: 0.7s;
+    animation-timing-function: ease;
+}
+
+#btn-busca:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+}
+
+/* ======================== Resultados da pesquisa ======================== */
+.resultado-item {
+    display: block;
+    background-color: #D8BFD8;
+    padding: 15px;
+    width: 60%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0,1);
+    font-size: 20px;
+    color: black;
 }
 
 /* ======================== Página inicial ======================== */
@@ -176,20 +229,117 @@ footer a:hover {
 }
 
 .cadastro button {
-    border: 1px groove black;
+    border: 1px groove #8B008B;
     border-radius: 8px;
     font-size: 15px;
     margin-left: 45px;
+    background-color: #8B008B;
+    color: white;
+    transition-property: transform;
+    transition-duration: 0.7s;
+    animation-timing-function: ease;
+}
+
+.cadastro button:hover {
     cursor: pointer;
+    transition-duration: 0.4s;
+    transform: scale(1.1);
+}
+
+.cadastro #btn-limpar {
+    margin-left: 75%;
+    margin-top: 5%;
+}
+
+/* ======================== Minha conta ======================== */
+.dados-container {
+    display: flex;
+    max-width: 1000px;
+    height: 570px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.dados-cadastrados {
+    padding: 5% 50px;
+    line-height: 1.3;
+}
+
+.dados-container aside {
+    width: 40%;
+}
+
+.dados-container aside img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    gap: 80px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+}
+
+#bt-deletar {
+    margin-top: 50%;
+    margin-left: 35%;
+    background-color: #8B008B;
+    color: white;
+    padding: 8px;
+    font-size: 15px;
+    border: 2px solid #8B008B;
+    border-radius: 20px;
+
+    transition-property: transform;
+    transition-duration: 0.7s;
+    animation-timing-function: ease;
+}
+
+#bt-deletar:hover {
+    cursor: pointer;
+    transition-duration: 0.4s;
+    transform: scale(1.1);
+}
+
+.datasaved {
+    border: 1px groove black;
+    padding: 6px;
 }
 
 /* ======================== Login ======================== */
-#sair {
-    display: none;
+#email-login, #senha-login {
+    font-size: 15px;
 }
 
 #entrar {
+    border: 2px solid #8B008B;
+    border-radius: 20px;
+    margin-left: 60px;
+    padding: 8px;
+    background-color: #8B008B;
+    color: white;
+
+    transition-property: transform;
+    transition-duration: 0.7s;
+    animation-timing-function: ease;
+}
+
+#entrar:hover {
     cursor: pointer;
+    transition-duration: 0.4s;
+    transform: scale(1.1);
+}
+
+#sair {
+    display: none;
 }
 
 /* ======================== Comentários ======================== */
@@ -243,15 +393,29 @@ textarea {
     background-color: #FFE4E1;
 }
 
+#enviar-comentario, #sair {
+    background-color: #8B008B;
+    color: white;
+    border: 2px solid #8B008B;
+    border-radius: 20px;
+    padding: 6px;
+    transition-property: transform;
+    transition-duration: 0.4s;
+    animation-timing-function: ease;
+}
+
+#enviar-comentario:hover, #sair:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 #enviar-comentario {
-    padding: 3px;
     font-size: 15px;
     cursor: pointer;
     margin-right: 10px;
 }
 
 #sair {
-    padding: 3px;
     font-size: 15px;
     cursor: pointer;
 }
