@@ -105,6 +105,11 @@ function cadastrarUser() {
     let dataNascCad = document.getElementById("nasc-cad").value;
     let sexoCad = document.getElementById("sexo-cad").value;
 
+    const data_atual = new Date();
+    const ano = data_atual.getFullYear();
+    const mes = data_atual.getMonth();
+    const dia = data_atual.getDate();
+
     let usuarios = JSON.parse(localStorage.getItem("usuarios") || "[]");
 
     let existeCadastro = usuarios.find(user => user.email === emailCad);
@@ -125,7 +130,7 @@ function cadastrarUser() {
         usuarios.push(novoCad);
 
         localStorage.setItem("usuarios", JSON.stringify(usuarios));
-        showMessage('Cadastro realizado com sucesso!');
+        showMessage(dia + '/' + mes + '/' + ano + '\nCadastro realizado com sucesso!');
 
         document.getElementById("nome-cad").value = "";
         document.getElementById("email-cad").value = "";
